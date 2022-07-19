@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    background-color: #242424;
+}
+
+.MainText{
+    font-family: 'Montserrat', sans-serif;
+    /* text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.3); */
+    height: 200px;
+    padding-top: 25vh;
+    position: relative;
+    width: 100%;
+    font-size: 5vh;
+    animation-name: text;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    line-height: 16vh;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    div.MainText {
+      font-size: 3vh;
+      line-height: 8vh
+    }
+  }
+
+a:link{
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+@keyframes link{
+    0% {width: 0%;}
+    100% {width: 60%;}
+}
+
+@keyframes text{
+    0% {opacity: 0%; padding-top: 40vw;}
+    100% {opacity: 100%; padding-top: 25vh;}
+}
+
+button {
+    background-color: #6d6d6d9f; /* Green */
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vh;
+    margin: 1px 1px;
+    cursor: pointer;
+    border-radius: 18px;
+  }
