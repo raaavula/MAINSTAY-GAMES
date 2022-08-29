@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+a:link, a:visited {
+  color: (white);
+  text-decoration: none;
+  cursor: auto;
+}
+
+a:link:active, a:visited:active {
+  color: (white);
+}
+
 body {
   font-family: montserrat, sans-serif;
 }
