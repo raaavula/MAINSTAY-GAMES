@@ -889,7 +889,7 @@ Banner Style
 
 .main-banner:after {
   content: '';
-  background-image: url(../images/slider-left-dec.jpg);
+  background-image: url(slider-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -901,7 +901,7 @@ Banner Style
 
 .main-banner:before {
   content: '';
-  background-image: url(../images/slider-right-dec.jpg);
+  background-image: url(slider-right-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -1219,7 +1219,7 @@ Services Style
 
 .services:after {
   content: '';
-  background-image: url(../images/services-left-dec.jpg);
+  background-image: url(services-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -1231,7 +1231,7 @@ Services Style
 
 .services:before {
   content: '';
-  background-image: url(../images/services-right-dec.jpg);
+  background-image: url(services-right-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -1394,7 +1394,7 @@ Free Quote
 */
 
 .free-quote {
-  background-image: url(../images/quote-bg-v3.jpg);
+  background-image: url(quote-bg-v3.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1475,7 +1475,7 @@ Portfolio
 
 .our-portfolio:before {
   content: '';
-  background-image: url(../images/portfolio-right-dec.jpg);
+  background-image: url(portfolio-right-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -1487,7 +1487,7 @@ Portfolio
 
 .our-portfolio:after {
   content: '';
-  background-image: url(../images/portfolio-left-dec.jpg);
+  background-image: url(portfolio-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -1596,7 +1596,7 @@ Blog
 
 .blog:before {
   content: '';
-  background-image: url(../images/blog-left-dec.jpg);
+  background-image: url(blog-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -1765,7 +1765,7 @@ contact
 
 
 form#contact:before {
-  background-image: url(../images/contact-top-right-v3.png);
+  background-image: url(contact-top-right-v3.png);
   position: absolute;
   right: 0;
   top: 0;
@@ -1784,7 +1784,7 @@ form#contact:before {
 }
 
 form#contact:after {
-  background-image: url(../images/contact-bottom-right-v3.png);
+  background-image: url(contact-bottom-right-v3.png);
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1914,7 +1914,7 @@ Footer Style
 */
 
 footer {
-  background-image: url(../images/footer-bg-v3.jpg);
+  background-image: url(footer-bg-v3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
