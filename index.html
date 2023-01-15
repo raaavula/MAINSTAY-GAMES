@@ -1,230 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>MAINSTAY STUDIOS</title>
-		<link rel="stylesheet" href="styles.css" />
 
-		<!-- locomotive-scroll -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css"
-		/>
-		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
-	</head>
-	<body id="js-scroll">
-		<div class="wrapper">
-			<div class="container">
-				<!-- navbar -->
-				<div class="navbar">
-					<div class="navbar-container">
-						<div class="site-title">MAINSTAY</div>
-						<!-- <div class="site-type">folio</div> -->
-						<div class="site-year">PLXYZ</div>
-					</div>
-				</div>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Complete Corportate Website</title>
 
-				<!-- divider -->
-				<div class="divider"></div>
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="style.css">
 
-				<!-- header -->
-				<div class="header">
-					<div class="header-container">
-						<h1>Welcome to<br />Mainstay Studios<br />&nbsp;</h1>
-					</div>
-				</div>
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap"
+            rel="stylesheet">
 
-				<!-- hero-image -->
-				<div class="hero-image">
-					<div class="hero-image-container" data-scroll data-scroll-speed="2">
-						<img src="hero-image.png" alt="" />
-					</div>
-				</div>
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-				<div class="whitespace"></div>
+      <!-- icons -->
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-				<!-- sections -->
-				<div class="section-header">
-					<div class="section-header-container">
-						<div class="section-title">about</div>
-						<div class="section-order">/001</div>
-					</div>
-				</div>
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+      <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
 
-				<div class="divider"></div>
+<body>
 
-				<!-- about -->
-				<section class="about">
-					<div class="about-container">
-						<p>
-							Mainstay studios is an indie video game development and publishing studio based in New Delhi, India. We are a group of passionate indieviduals working hard to provide you all with quality content
-						</p>
-						<p>
-							We started back in 2021 and have a experience of more than 2 years. We have created more than 15 games including all platforms
-						</p>
-						<p>We also provide .python, .java and web development services in partnership with PLXYZ</p>
-					</div>
-				</section>
+      <a name="home"></a>
+      <div class="wrapper">
 
-				<div class="whitespace"></div>
+            <!--------------- hero section starts here --------------->
 
-				<!-- projects -->
-				<div class="section-header">
-					<div class="section-header-container">
-						<div class="section-title">extras</div>
-						<div class="section-order">/002</div>
-					</div>
-				</div>
+            <div class="video-container">
+                  <video playsinline autoplay muted loop id="bgvid">
+                        <!-- <source src="videobg.mp4" type="video/mp4"> -->
+                  </video>
+            </div>
 
-				<div class="divider"></div>
+            <div class="header">
+                  <h1>We are here to raise the standards.</h1>
+            </div>
 
-				<section class="project">
-					<div class="project-container">
-						<div>
-							<nav class="menu">
-								<div class="menu__item">
-									<a class="menu__item-link" target="_blank" href="https://drive.google.com/drive/u/5/folders/1mLldZcXgAeLwmuHqvzT8w4lM5EqhW4T5">/ Downloads</a>
-									<!-- <img class="menu__item-img" src="images/project-one.jpeg" /> -->
-									<div class="marquee">
-										<div class="marquee__inner">
-											<span>Downloads</span>
-											<span>Downloads</span>
-											<span>Downloads</span>
-											<span>Downloads</span>
-										</div>
-									</div>
-								</div>
+            <!--------------- hero section ends here --------------->
 
-								<div class="divider"></div>
-<!-- 
-								<div class="menu__item">
-									<a class="menu__item-link" href="#">/ Newswire</a>
-									<img class="menu__item-img" src="images/project-two.jpeg" />
-									<div class="marquee">
-										<div class="marquee__inner">
-											<span>Newswire</span>
-											<span>Newswire</span>
-											<span>Newswire</span>
-											<span>Newswire</span>
-										</div>
-									</div>
-								</div> -->
+            <!--------------- navbar starts here --------------->
 
-								<div class="divider"></div>
+            <nav class="nav">
+                  <span id="brand">
+                        <a href="index.html">MAINSTAY GAMES</a>
+                  </span>
 
-								<div class="menu__item">
-									<a class="menu__item-link" target="_blank" href="https://discord.gg/YGRdrBRGcR">/ PLXYZ</a>
-									<!-- <img class="menu__item-img" src="images/plxyz logo.jpg" /> -->
-									<div class="marquee">
-										<div class="marquee__inner">
-											<span>PLXYZ</span>
-											<span>PLXYZ</span>
-											<span>PLXYZ</span>
-											<span>PLXYZ</span>
-										</div>
-									</div>
-								</div>
+                  <ul id="menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Our team</a></li>
+                  </ul>
 
-								<div class="divider"></div>
+                  <div id="toggle">
+                        <div class="span">menu</div>
+                  </div>
 
-								<!-- <div class="menu__item">
-									<a class="menu__item-link">/ Brutal</a>
-									<img class="menu__item-img" src="images/project-four.jpeg" />
-									<div class="marquee">
-										<div class="marquee__inner">
-											<span>Brutal</span>
-											<span>Brutal</span>
-											<span>Brutal</span>
-											<span>Brutal</span>
-										</div>
-									</div>
-								</div>
+            </nav>
 
-								<div class="divider"></div>
+            <div id="resize">
+                  <div class="close-btn">close</div>
 
-								<div class="menu__item">
-									<a class="menu__item-link">/ The Crew</a>
-									<img class="menu__item-img" src="images/project-five.jpeg" />
-									<div class="marquee">
-										<div class="marquee__inner" aria-hidden="true">
-											<span>The Crew</span>
-											<span>The Crew</span>
-											<span>The Crew</span>
-											<span>The Crew</span>
-										</div>
-									</div>
-								</div> -->
-							</nav>
-						</div>
-					</div>
-				</section>
+                  <ul id="menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Our team</a></li>
+                  </ul>
+            </div>
 
-				<div class="whitespace"></div>
+            <!--------------- navbar ends here --------------->
 
-				<!-- clients -->
-				<div class="section-header">
-					<div class="section-header-container">
-						<div class="section-title">plxyz</div>
-						<div class="section-order">/003</div>
-					</div>
-				</div>
+            <div class="content">
 
-				<div class="divider"></div>
+                  <!--------------- about section starts here --------------->
 
-				<section class="clients">
-					<div class="clients-container">
-						<p>
-							<br />
-							PlxyZ was first a small server which used to share codes, trade websites/discord bots etc. And now even thought it's merged with us (mainstay), it still continues to share and trade things like it used to. If you want some codes or wanna buy/sell things, join our discord server.
-							<br />
-						</p>
-					</div>
-				</section>
+                  <a name="about"></a>
 
-				<div class="whitespace"></div>
+                  <section class="story">
 
-				<!-- social  -->
-				<div class="section-header">
-					<div class="section-header-container">
-						<div class="section-title">socials</div>
-						<div class="section-order">/004</div>
-					</div>
-				</div>
 
-				<div class="divider"></div>
+                        <div class="container-fluid">
 
-				<section class="socials">
-					<div class="socials-container">
-						<div class="socials-id dr"><a target="_blank" href="https://discord.gg/YGRdrBRGcR">discord</a></div>
-						<div class="socials-id ln"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.MainstayGames.GRIMSIDE">games</a></div>
-						<div class="socials-id ig"><a target="_blank" href="https://www.instagram.com/mainstay_studios/">instagram</a></div>
-						<div class="socials-id tw"><a target="_blank" href="">twitter</a></div>
-					</div>
-				</section>
+                              <div class="section-data">
 
-				<div class="divider"></div>
+                                    <div class="row">
+                                          <div class="col-md-2"></div>
+                                          <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">01
+                                          </div>
+                                          <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">ABOUT
+                                                MAINSTAY GAMES</div>
+                                    </div>
 
-				<!-- footer -->
-				<div class="footer">
-					<div class="navbar">
-						<div class="navbar-container">
-							<div class="site-title">created by <a href="" target="_blank">RAVULA</a> </div>
-							<!-- <div class="site-year">55.386656, 11.764279</div> -->
-						</div>
-					</div>
-				</div>
-				<br />
-			</div>
-		</div>
+                                    <div class="row">
+                                          <div class="col-md-4"></div>
+                                          <div class="col-md-6 section-subheading wow fadeInUp" data-wow-delay="0.5s">
+                                                <h1>We are a team of passionate individuals who believe life is all
+                                                      about fun and games (pun intended). </h1>
+                                          </div>
+                                    </div>
 
-		<script>
-			const scroll = new LocomotiveScroll({
-				el: document.querySelector("#js-scroll"),
-				smooth: true,
-				smoothMobile: true,
-				inertia: 0.75,
-			});
-		</script>
-	</body>
+                                    <div class="row">
+                                          <div class="col-md-4"></div>
+                                          <div class="col-md-6 section-info wow fadeInUp" data-wow-delay="0.6s">We
+                                                strive to create a fulfilling experience which statiates the gamer in
+                                                you. It is our mission to unlock the greatest level of your gaming
+                                                fantasies and we ensure we have something for everyone (all genders and
+                                                age groups inclusive)</div>
+                                    </div>
+
+                                    <div class="row">
+                                          <div class="col-md-4"></div>
+                                          <div class="col-md-8 more wow fadeInUp" data-wow-delay="0.7s">
+                                                <button id="btn">Know more</button>
+                                          </div>
+                                    </div>
+
+                              </div>
+
+                        </div>
+
+                  </section>
+
+                  <!--------------- about section ends here --------------->
+
+                  <!--------------- services section starts here --------------->
+
+                  <a name="services"></a>
+
+                  <section class="services">
+
+                        <div class="container-fluid">
+
+                              <div class="section-data">
+
+                                    <div class="row">
+                                          <div class="col-md-2"></div>
+                                          <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">02
+                                          </div>
+                                          <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">
+                                                PROJECTS</div>
+                                    </div>
+
+                                    <div class="row service">
+                                          <div class="col-md-4"></div>
+                                          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
+                                                <div class="icon">
+                                                      <a target="_blank"
+                                                            href="https://play.google.com/store/apps/dev?id=5607753270676737837"
+                                                            style="text-decoration: none; color: aliceblue;">OUR
+                                                            GAMES</a>
+                                                </div>
+                                                <div class="icon-title">
+                                                      Checkout the games made by our team.
+                                                </div>
+                                          </div>
+
+                                    </div>
+
+                                    <div class="row service">
+                                          <div class="col-md-4"></div>
+                                          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.7s">
+                                                <div class="icon">
+                                                      <a target="_blank"
+                                                            href="https://drive.google.com/drive/u/5/folders/1mLldZcXgAeLwmuHqvzT8w4lM5EqhW4T5"
+                                                            style="text-decoration: none; color: aliceblue;">DOWNLOADS</a>
+                                                </div>
+                                                <div class="icon-title">
+                                                      Checkout our wallpaper collection!
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+
+                        </div>
+
+                  </section>
+
+                  <!--------------- services section ends here --------------->
+
+                  <!--------------- team section starts here --------------->
+
+                  <a name="team"></a>
+
+                  <section class="team">
+
+                        <div class="container-fluid">
+
+                              <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">03</div>
+                                    <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Our team
+                                    </div>
+                              </div>
+
+                              <div class="row members">
+
+                                    <div class="col-md-4"></div>
+
+                                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
+                                          <div class="team-member">
+                                                <div class="team-img team-one"></div>
+                                          </div>
+                                          <div class="team-title">
+                                                <h5>HARSHIT VATS</h5>
+                                                <span>Founder & CEO</span>
+                                          </div>
+                                    </div>
+
+                                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
+                                          <div class="team-member">
+                                                <div class="team-img team-two"></div>
+                                          </div>
+                                          <div class="team-title">
+                                                <h5>SUMIT PATHAK</h5>
+                                                <span>Co-founder</span>
+                                          </div>
+                                    </div>
+
+                              </div>
+
+                        </div>
+
+                  </section>
+
+                  <!--------------- team section ends here --------------->
+
+                  <!--------------- newsletter section starts here --------------->
+
+                  <section class="newsletter">
+
+                        <div class="container">
+
+                              <div class="row">
+                                    <div class="col-md-12">
+                                          <div class="news-data">
+                                                <div class="section-subheading">
+                                                      <h1 class="wow fadeInUp" data-wow-delay="0.3s">Subscribe to our
+                                                            newsletter</h1>
+                                                </div>
+
+                                                <form name="submit-to-google-sheet" class="input-group wow fadeInUp"
+                                                      data-wow-delay="0.4s">
+                                                      <input type="email" name="Email" class="form-control"
+                                                            placeholder="Enter your email" required>
+                                                      <span class="input-group-btn">
+                                                            <button class="btn" type="submit">Subscribe</button>
+                                                      </span>
+                                                </form>
+                                                <span id="msg" style="color: aliceblue;"></span>
+                                          </div>
+                                    </div>
+                              </div>
+
+                        </div>
+
+                  </section>
+
+                  <!--------------- newsletter section ends here --------------->
+
+                
+                  <!--------------- footer starts here --------------->
+
+                  <div class="footer">
+
+                        <div class="container">
+
+                              <div class="info">
+
+                                    <div class="row">
+                                          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s" id="address">
+                                                <p>Contact us</p>
+                                                <!-- <h4>8 Rockville Avenue</h4>
+                                                <h4>Southaven</h4> -->
+                                                <h4>+91-9310851185</h4>
+
+                                                <br><br>
+                                          </div>
+
+                                          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s" id="media">
+                                                <ul>
+                                                      <!-- <a target="_blank" href="www.youtube.com">
+                                                            <li><ion-icon name="logo-facebook"></ion-icon></li>
+                                                      </a> -->
+
+                                                      <a target="_blank" href="https://www.instagram.com/mainstaygames.online/">
+                                                            <li><ion-icon name="logo-instagram"></ion-icon></li>
+                                                      </a>
+
+
+                                                      <li><ion-icon name="logo-twitter"></ion-icon></li>
+
+                                                      <li><ion-icon name="logo-youtube"></ion-icon></li>
+                                                </ul>
+
+                                                <br><br>
+                                          </div>
+
+                                          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" id="mail">
+                                                <p>Say Hello</p>
+                                                <h4>hello@mainstaygames.online</h4>
+
+                                                <br><br>
+                                          </div>
+                                    </div>
+
+                              </div>
+
+                        </div>
+
+                  </div>
+
+                  <!--------------- footer ends here --------------->
+
+            </div>
+
+      </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script>
+
+            // navigation starts here
+            $("#toggle").click(function () {
+                  $(this).toggleClass('on');
+                  $("#resize").toggleClass("active");
+            });
+            $("#resize ul li a").click(function () {
+                  $(this).toggleClass('on');
+                  $("#resize").toggleClass("active");
+            });
+            $(".close-btn").click(function () {
+                  $(this).toggleClass('on');
+                  $("#resize").toggleClass("active");
+            });
+
+            $(function () {
+                  $(document).scroll(function () {
+                        var $nav = $(".nav");
+                        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                  });
+            });
+
+            new WOW().init();
+
+            // Select all links with hashes
+            $('a[href*="#"]')
+                  // Remove links that don't actually link to anything
+                  .not('[href="#"]')
+                  .not('[href="#0"]')
+                  .click(function (event) {
+                        // On-page links
+                        if (
+                              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                              &&
+                              location.hostname == this.hostname
+                        ) {
+                              // Figure out element to scroll to
+                              var target = $(this.hash);
+                              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                              // Does a scroll target exist?
+                              if (target.length) {
+                                    // Only prevent default if animation is actually gonna happen
+                                    event.preventDefault();
+                                    $('html, body').animate({
+                                          scrollTop: target.offset().top
+                                    }, 1000, function () {
+                                          // Callback after animation
+                                          // Must change focus!
+                                          var $target = $(target);
+                                          $target.focus();
+                                          if ($target.is(":focus")) { // Checking if the target was focused
+                                                return false;
+                                          } else {
+                                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                                $target.focus(); // Set focus again
+                                          };
+                                    });
+                              }
+                        }
+                  });
+
+
+      </script>
+
+      <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx7LE6-6t0DkkUYkIvwLfFMBIKQsh62QmEXqmFBSNXM585uZGsvi4yEGBZL8w8pCv0/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                              msg.innerHTML = "Thank you for subscribing!"
+                              setTimeout(function () {
+                                    msg.innerHTML = ""
+                              }, 5000)
+                              form.reset()
+                        })
+                        .catch(error => console.error('Error!', error.message))
+            })
+      </script>
+</body>
+
 </html>
